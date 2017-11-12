@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Ningsa Point</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/materialize.css" />
+    <link href="../fonts/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar & leftbar -->
+    <ul id="slide-out" class="side-nav ">
+        <li>
+            <div class="userView" style="margin:auto;">
+                <a href="#!user"><img class="circle responsive-img" src="../img/janedoe.jpg"></a>
+                <a href="#!name"><span class="black-text name">Jane Doe</span></a>
+                <a href="#!email"><span class="black-text email">janedoe@mail.com</span></a>
+                <div class="divider"></div>
+            </div>
+        </li>
+        <li><a href="pembeli.html"><i class="material-icons">person</i>Profil</a></li>
+        <li><a href="sale.html"><i class="material-icons">cached</i>Pembayaran</a></li>
+        <li><a href="message.html"><i class="material-icons">message</i><span class="badge">15</span>Pesan</a></li>
+        <li><a href="money.html"><i class="modal-trigger material-icons">attach_money</i><span class="new badge green darken-2">3</span>Dana</a></li>
+        <li><a href="history.html"><i class="material-icons">history</i>Riwayat penjualan</a></li>
+        <li><a href="help.html"><i class="material-icons">help</i>Help</a></li>
+        <li><a href="index.html"><i class="material-icons">power_settings_new</i>logout</a></li>
+        <!-- <li><a href="#!">Second Link</a></li>
+        <li></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper red darken-4 ">
+                <a href="#" data-activates="slide-out" class="button-collapse left"><i class="material-icons">menu</i></a>
+                <a href="#notiv" class=" modal-trigger right" style="margin-right:5%;"><i class="material-icons">notifications</i></a>
+                <a href="../index.html" class="brand-logo" style="font-size:200%">NingsaPoint</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--  -->
+
+    <!-- modal -->
+    <div id="notiv" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <div class="collection ">
+                <a href="#!" class="collection-item black-text">121237 telah melakukan pembayaran</a>
+                <a href="#!" class="collection-item black-text">admin segera memproses pencairan dana anda</a>
+                <a href="#!" class="collection-item black-text">231274 telah mengkonfirmasi barang sudah sampai, admin akan segera mengirim dana ke account anda</a>
+                <a href="#!" class="collection-item black-text">123341 "bang, dana sudah saya trf, cepet dikirim ya barangnya.."</a>
+                <a href="#!" class="collection-item black-text">admin "YTH, sodara jane. kami menerima komplain tentang barang yang anda kirim pada tanggal 7 januari 2020""</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Tutup</a>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <!-- ISI PAGE -->
+
+    <div class="container">
+        <div class="row">
+            <div class="card-panel col s12">
+                <div class="center">
+                    <span style="font-size:150%;font-weight:400;"><b>Masukan Kode Belanja</b></span><br>
+                    <p>kode belanja didapatkan dari penjual</p>
+                </div><br>
+                <div class="divider"></div><br>
+
+                <div class="input-field col s12">
+                    <input id="barang" type="text" class="validate">
+                    <label for="barang">Kode Belanja</label>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="divider"></div><br>
+        <div class="col s12 center">
+            <a class="waves-effect waves-light btn red darken-4 btn-large modal-trigger" style=" width:90%" href="#berhasil">tambah transaksi</a>
+        </div>
+        <!-- modal berhasil -->
+        <div id="berhasil" class="modal modal-fixed-footer" style="width: 85% !important;
+            height: 45% !important;">
+            <div class="modal-content center">
+                <span style="font-size:20px;font-weight:250;">Anda telah berhasil menambahkan barang</span>
+                <p>silahkan transfer uang pada ke daftar rekening dibawah ini, lalu upload bukti pembayaran anda</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bank</th>
+                            <th>No. Rek</th>
+                            <th>Atas Nama</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>BCA</td>
+                            <td>014-22-2222-22</td>
+                            <td>PT. NINGSA POINT TBK</td>
+                        </tr>
+                        <tr>
+                            <td>MANDIRI</td>
+                            <td>008-222-2233-80</td>
+                            <td>PT. NINGSA POINT TBK</td>
+                        </tr>
+                        <tr>
+                            <td>BNI</td>
+                            <td>009-3252-2222-222</td>
+                            <td>PT. NINGSA POINT TBK</td>
+                        </tr>
+                        <tr>
+                            <td>BRI</td>
+                            <td>009-8862-2222-222</td>
+                            <td>PT. NINGSA POINT TBK</td>
+                        </tr>
+                        <tr>
+                            <td>CIMB NIAGA</td>
+                            <td>022-44-222286-221</td>
+                            <td>PT. NINGSA POINT TBK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="pembeli.html" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+        <!--  -->
+
+
+
+
+        <!--  -->
+
+
+
+        <!--  Scripts-->
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/materialize.min.js"></script>
+        <script src="../js/init.js"></script>
+        <script>
+        </script>
+</body>
+
+</html>

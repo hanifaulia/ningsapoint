@@ -72,15 +72,72 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Tutup</a>
         </div>
     </div>
+    <div id="tambah" class="modal modal-fixed-footer" style=" width: 85% !important;
+    height: 50% !important;">
+        <div class="modal-content">
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="wrong" data-success="right">Email Penerima</label>
+                        </div>
+                        <div class="input-field col s8">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Subject Pesan</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Isi Pesan</label>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Batal</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Kirim</a>
+        </div>
+    </div>
+    <div id="admin" class="modal modal-fixed-footer" style=" width: 85% !important;
+    height: 50% !important;">
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h4 align="center">Untuk Admin</h4>
+                        </div>
+                        <div class="input-field col s8">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Subject Pesan</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Isi Pesan</label>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Batal</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Kirim</a>
+        </div>
+    </div>
     <!--  -->
     <!-- navbutton -->
-    <div class="fixed-action-btn toolbar ">
-        <a class="btn-floating btn-large red darken-4">
-            <i class="large material-icons">add</i>
+    <div class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
         </a>
         <ul>
-            <li class="waves-effect waves-light"><a href="addsale.html"><i class="material-icons">shopping_cart</i></a></li>
-            <li class="waves-effect waves-light"><a href="addmoney.html"><i class="material-icons">attach_money</i></a></li>
+            <li><a class="btn-floating red modal-trigger" href="#tambah"><i class="material-icons">add</i></a></li>
+            <li><a class="btn-floating yellow darken-1 modal-trigger" href="#admin"><i class="material-icons">face</i></a></li>
 
         </ul>
     </div>
@@ -126,15 +183,7 @@
             <a class="waves-effect waves-teal btn-flat">Balas</a>
             <a class="waves-effect waves-teal btn-flat">Hapus</a>
         </li>
-        <li class="collection-item avatar">
-            <img src="img/matsolar.jpg" alt="" class="circle">
-            <span class="title"><b>Mat Solar</b></span>
-            <p>Barang tidak sampai <br>maaf mas, sudah seminggu kok barang belum sampai ya?
-            </p>
-            <br>
-            <a class="waves-effect waves-teal btn-flat">Balas</a>
-            <a class="waves-effect waves-teal btn-flat">Hapus</a>
-        </li>
+
 
     </ul>
 
