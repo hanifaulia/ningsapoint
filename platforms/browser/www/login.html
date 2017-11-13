@@ -39,18 +39,18 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <title>Ningsa Point</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-    <link href="fonts/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
-    <link href="fonts/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/materialize.css" />
+    <link href="../fonts/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
+    <link href="../fonts/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -60,16 +60,21 @@
 
         <row>
             <div class="col s8 center">
-                <img class=" responsive-img" src="img/logom.png">
+                <img class=" responsive-img" src="../img/logom.png">
             </div>
             <div class=" col s12 center card-panel">
-                <h3 class="grey-text text-darken-3" style="font-size:250%">Masuk Sebagai</h3>
-                <div class="divider"></div><br>
+
+
+                <div class="input-field col s12">
+                    <input id="barang" type="text" class="validate">
+                    <label for="barang">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="barang" type="password" class="validate">
+                    <label for="barang">Password</label>
+                </div>
                 <div class="col s8">
-                    <a class="red darken-4 waves-effect  btn  btn-large" style="width:90%" href="login.html">Penjual</a>
-                </div><br>
-                <div class="col s8">
-                    <a class="waves-effect waves-light btn red darken-4 btn-large" style=" width:90%" href="pembeli/login.html">Pembeli</a>
+                    <a class="waves-effect waves-light btn red darken-4 btn-large" style=" width:90%" href="pembeli.html">Masuk</a>
                 </div>
             </div>
         </row>
@@ -79,11 +84,11 @@
 
 
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
